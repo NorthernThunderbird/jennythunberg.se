@@ -173,7 +173,7 @@ h1, h2, h3, h4 {
 .nav__dropdown-menu {
   display: none;
   position: absolute;
-  top: 100%;
+  top: calc(100% + 16px);
   left: 50%;
   transform: translateX(-50%);
   background: var(--dark);
@@ -187,10 +187,10 @@ h1, h2, h3, h4 {
 .nav__dropdown-menu::before {
   content: '';
   position: absolute;
-  top: -12px;
+  top: -24px;
   left: 0;
   right: 0;
-  height: 12px;
+  height: 24px;
 }
 .nav__dropdown.open .nav__dropdown-menu { display: block; }
 
