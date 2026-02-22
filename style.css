@@ -181,7 +181,11 @@ h1, h2, h3, h4 {
   list-style: none;
   padding: 8px 0;
 }
-.nav__dropdown.open .nav__dropdown-menu { display: block; }
+.nav__dropdown.open .nav__dropdown-menu,
+.nav__dropdown:hover .nav__dropdown-menu { display: block; }
+
+.nav__dropdown:hover .nav__dropdown-toggle { color: #fff; }
+.nav__dropdown:hover .nav__dropdown-arrow { transform: rotate(180deg); }
 
 .nav__dropdown-menu li a {
   display: block;
