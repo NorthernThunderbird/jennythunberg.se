@@ -72,6 +72,11 @@
 </head>
 <body>
 
+  <!-- PAGE LOADER -->
+  <div id="page-loader" class="page-loader" aria-hidden="true">
+    <img src="logo-icon.png" alt="" class="page-loader__logo" />
+  </div>
+
   <!-- NAV -->
   <nav class="nav">
     <div class="nav__inner">
@@ -226,6 +231,19 @@
   </footer>
 
   <script>
+    // Page loader
+    const loader = document.getElementById('page-loader');
+    if (loader) {
+      document.body.style.overflow = 'hidden';
+      setTimeout(() => {
+        loader.classList.add('fade-out');
+        loader.addEventListener('transitionend', () => {
+          loader.remove();
+          document.body.style.overflow = '';
+        }, { once: true });
+      }, 2050); // spin completes at 2s, tiny pause then fade
+    }
+
     // Letter-by-letter hero title animation
     const heroTitle = document.querySelector('.hero__title');
     if (heroTitle) {
