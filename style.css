@@ -746,7 +746,22 @@ h1, h2, h3, h4 {
   .hero__subtitle { white-space: normal; }
 }
 
-/* ----- Instagram grid ----- */
+/* ----- Behold Instagram widget wrapper ----- */
+.behold-instagram-wrap {
+  width: 100%;
+}
+behold-widget {
+  --behold-columns: 4;
+  --behold-gap: 4px;
+  --behold-border-radius: 0;
+  display: block;
+  width: 100%;
+}
+@media (max-width: 640px) {
+  behold-widget { --behold-columns: 2; }
+}
+
+/* ----- Instagram grid (fallback placeholders) ----- */
 .instagram-grid {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
