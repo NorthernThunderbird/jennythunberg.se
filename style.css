@@ -156,7 +156,8 @@ h1, h2, h3, h4 {
   display: flex;
   align-items: center;
   gap: 5px;
-  padding: 0;
+  padding: 8px 0;
+  margin: -8px 0;
 }
 .nav__dropdown-toggle:hover,
 .nav__dropdown.open .nav__dropdown-toggle { color: #fff; }
@@ -172,14 +173,24 @@ h1, h2, h3, h4 {
 .nav__dropdown-menu {
   display: none;
   position: absolute;
-  top: calc(100% + 18px);
+  top: 100%;
   left: 50%;
   transform: translateX(-50%);
   background: var(--dark);
   border: 1px solid rgba(255,255,255,0.08);
-  min-width: 180px;
+  min-width: 200px;
   list-style: none;
   padding: 8px 0;
+}
+
+/* Invisible bridge fills the gap between toggle and menu so hover isn't lost */
+.nav__dropdown-menu::before {
+  content: '';
+  position: absolute;
+  top: -12px;
+  left: 0;
+  right: 0;
+  height: 12px;
 }
 .nav__dropdown.open .nav__dropdown-menu { display: block; }
 
