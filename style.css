@@ -250,7 +250,7 @@ h1, h2, h3, h4 {
 
 .hero__title {
   font-family: var(--font-head);
-  font-size: clamp(3rem, 8vw, 5.5rem);
+  font-size: clamp(2.6rem, 6vw, 4rem);
   font-weight: 400;
   letter-spacing: 0.02em;
   margin-bottom: 20px;
@@ -771,7 +771,6 @@ h1, h2, h3, h4 {
 
   .gallery { grid-template-columns: 1fr; }
 
-  .hero__title { font-size: 2rem; }
   .hero__subtitle { white-space: normal; }
 }
 
