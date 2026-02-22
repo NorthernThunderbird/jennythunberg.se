@@ -1,10 +1,10 @@
 /* ============================================================
    Jenny Thunberg Keramik — Local Redesign Base
    Colors: cream #EAD BB6, rust #a57468, dark #222222
-   Fonts:  Cormorant Garamond (all), Caveat (hero title)
+   Fonts:  Cormorant Garamond (all), Cedarville Cursive (hero title)
    ============================================================ */
 
-@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;1,300;1,400;1,500&family=Caveat:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;1,300;1,400;1,500&family=Cedarville+Cursive&display=swap');
 
 /* ----- Reset & Base ----- */
 *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
@@ -249,18 +249,30 @@ h1, h2, h3, h4 {
 }
 
 .hero__title {
-  font-family: 'Caveat', cursive;
-  font-size: clamp(3rem, 8vw, 5.5rem);
-  font-weight: 700;
-  letter-spacing: 0.01em;
+  font-family: 'Cedarville Cursive', cursive;
+  font-size: clamp(2.6rem, 7vw, 5rem);
+  font-weight: 400;
+  letter-spacing: 0.02em;
   margin-bottom: 20px;
   text-shadow: 0 2px 20px rgba(0,0,0,0.4);
-  clip-path: inset(0 100% 0 0);
-  animation: handwrite 2s cubic-bezier(0.2, 0.6, 0.35, 1) 0.3s forwards;
 }
 
-@keyframes handwrite {
-  to { clip-path: inset(0 0% 0 0); }
+.hero__letter {
+  display: inline-block;
+  opacity: 0;
+  animation: letter-in 0.45s ease-out forwards;
+  animation-delay: calc(var(--i) * 55ms + 0.25s);
+}
+
+@keyframes letter-in {
+  from {
+    opacity: 0;
+    transform: translateY(8px) rotate(-4deg);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0) rotate(0deg);
+  }
 }
 
 .hero__subtitle {

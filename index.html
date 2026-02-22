@@ -226,6 +226,14 @@
   </footer>
 
   <script>
+    // Letter-by-letter hero title animation
+    const heroTitle = document.querySelector('.hero__title');
+    if (heroTitle) {
+      heroTitle.innerHTML = heroTitle.textContent.split('').map((ch, i) =>
+        `<span class="hero__letter" style="--i:${i}">${ch === ' ' ? '&nbsp;' : ch}</span>`
+      ).join('');
+    }
+
     const toggle = document.getElementById('nav-toggle');
     const links  = document.getElementById('nav-links');
     toggle.addEventListener('click', () => {
