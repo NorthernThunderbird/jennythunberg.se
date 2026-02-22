@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="sv">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Jenny Thunberg | Keramiker Uppsala</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="icon" href="https://jennythunberg.se/wp-content/uploads/2024/01/cropped-favicon.png" />
+</head>
+<body>
+
+  <!-- NAV -->
+  <nav class="nav">
+    <div class="nav__inner">
+      <a class="nav__logo" href="index.html">
+        <img src="logotyp.png"
+             alt="Jenny Thunberg Keramik"
+             onerror="this.style.display='none'; this.nextElementSibling.style.display='block';" />
+        <span class="nav__logo-text" style="display:none;">Jenny Thunberg</span>
+      </a>
+      <ul class="nav__links" id="nav-links">
+        <li><a href="index.html" class="active">Hem</a></li>
+        <li><a href="handla-keramik.html">Handla keramik</a></li>
+        <li class="nav__dropdown">
+          <button class="nav__dropdown-toggle" aria-expanded="false">Utforska <span class="nav__dropdown-arrow">▾</span></button>
+          <ul class="nav__dropdown-menu">
+            <li><a href="lera-och-glasyrer.html">Lera & glasyrer</a></li>
+            <li><a href="inspiration.html">Inspiration</a></li>
+          </ul>
+        </li>
+        <li><a href="keramikkurser.html">Keramikkurser</a></li>
+        <li><a href="kontakt.html">Kontakt</a></li>
+      </ul>
+      <button class="nav__toggle" id="nav-toggle" aria-label="Meny">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </nav>
+
+  <!-- HERO -->
+  <section class="hero">
+    <video class="hero__video" autoplay muted loop playsinline
+           poster="https://jennythunberg.se/wp-content/uploads/2024/01/test-scaled.jpg">
+      <source src="https://jennythunberg.se/wp-content/uploads/2024/01/test.mp4" type="video/mp4" />
+    </video>
+    <div class="hero__overlay"></div>
+    <div class="hero__content">
+      <h1 class="hero__title">Handgjord keramik från Uppsala</h1>
+      <p class="hero__subtitle">Upptäck handgjord keramik eller boka kurser i drejningsteknik och lär dig dreja</p>
+      <div class="hero__buttons">
+        <a href="keramikkurser.html" class="btn btn--primary">Boka kurs</a>
+        <a href="handla-keramik.html" class="btn">Handla keramik</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ABOUT STRIP -->
+  <div class="about-strip">
+    <div class="about-strip__text">
+      <div class="about-strip__text-inner">
+        <h2>Jenny Thunberg keramik i Sommarro Uppsala</h2>
+        <div class="divider"></div>
+        <p>Jag är keramiker och formgivare som arbetar med småskalig tillverkning av handgjord keramik.</p>
+        <p>Jag arbetar med stengodslera som antingen gjuts i egengjorda gipsformar eller drejas för hand. Jag vill att du ska uppleva att det varit en hand med hela vägen i processen. Ränderna i koppen som kan anas från drejningen, hänkeln som dragits av en hand för en hand. Små spår av handens arbete med omsorg i alla detaljer.</p>
+        <p>Min produktion består främst av bruksgods i små serier där form och funktion ligger mig varmt om hjärtat. I mitt formspråk strävar jag efter enkelhet och rena linjer.</p>
+        <br />
+        <a href="handla-keramik.html" class="btn btn--rust">Se keramiken</a>
+      </div>
+    </div>
+    <div class="about-strip__img">
+      <img src="https://jennythunberg.se/wp-content/uploads/2024/01/IMG_7466.jpg"
+           alt="Jenny Thunbergs keramik" />
+    </div>
+  </div>
+
+  <!-- GALLERY -->
+  <section class="section section--alt">
+    <div class="container">
+      <h2 style="font-size:2rem; color:var(--rust); text-align:center; margin-bottom:8px;">Keramik</h2>
+      <p style="text-align:center; color:var(--mid); margin-bottom:40px; font-weight:300;">Handgjord stengods i små serier</p>
+    </div>
+    <div class="gallery">
+      <div class="gallery__item">
+        <img src="https://jennythunberg.se/wp-content/uploads/2024/01/FC77B80D-1C36-4A71-A4CD-E3618D1FFF61.jpg"
+             alt="Keramik av Jenny Thunberg" />
+      </div>
+      <div class="gallery__item">
+        <img src="https://jennythunberg.se/wp-content/uploads/2024/01/keramik2.jpg"
+             alt="Keramik av Jenny Thunberg" />
+      </div>
+      <div class="gallery__item">
+        <img src="https://jennythunberg.se/wp-content/uploads/2024/01/keramik3.jpg"
+             alt="Keramik av Jenny Thunberg" />
+      </div>
+    </div>
+  </section>
+
+  <!-- QUOTE BANNER -->
+  <section class="quote-banner"
+           style="background-image: url('https://jennythunberg.se/wp-content/uploads/2024/01/test-scaled.jpg');">
+    <div class="quote-banner__inner">
+      <blockquote>
+        "Enkelhet och rena linjer — form och funktion i harmoni"
+      </blockquote>
+    </div>
+  </section>
+
+  <!-- KURSER TEASER -->
+  <section class="section">
+    <div class="container" style="text-align:center;">
+      <h2 style="font-size:2rem; color:var(--rust); margin-bottom:12px;">Keramikkurser</h2>
+      <div class="divider" style="margin: 12px auto 28px;"></div>
+      <p style="color:var(--mid); max-width:600px; margin:0 auto 36px; font-weight:300;">
+        Lär dig grunderna i keramik — drejning, handbygge och ringla — i en liten grupp om max 6 personer i min verkstad i Sommarro.
+      </p>
+      <a href="keramikkurser.html" class="btn btn--rust">Se kurser & anmälan</a>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer__inner">
+        <div class="footer__brand">
+          <h3>Jenny Thunberg Keramik</h3>
+          <p>Handgjord stengods i Sommarro, Uppsala.<br />
+             Formgivare med kärlek till enkelhet och hantverk.</p>
+        </div>
+        <div class="footer__links">
+          <h4>Sidor</h4>
+          <ul>
+            <li><a href="index.html">Hem</a></li>
+            <li><a href="handla-keramik.html">Handla keramik</a></li>
+            <li><a href="lera-och-glasyrer.html">Lera & glasyrer</a></li>
+            <li><a href="inspiration.html">Inspiration</a></li>
+            <li><a href="keramikkurser.html">Keramikkurser</a></li>
+            <li><a href="kontakt.html">Kontakt</a></li>
+          </ul>
+        </div>
+        <div class="footer__links">
+          <h4>Kontakt</h4>
+          <ul>
+            <li><a href="tel:0733844480">073-384 44 80</a></li>
+            <li><a href="kontakt.html">Skicka meddelande</a></li>
+          </ul>
+          <br />
+          <p style="font-size:0.85rem;">Öster om ån, Uppsala<br />Hantverket, Öregrund</p>
+        </div>
+      </div>
+      <div class="footer__bottom">
+        <p>© Jenny Thunberg Keramik · Uppsala</p>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    const toggle = document.getElementById('nav-toggle');
+    const links  = document.getElementById('nav-links');
+    toggle.addEventListener('click', () => {
+      const isOpen = links.classList.toggle('open');
+      toggle.classList.toggle('open', isOpen);
+      document.body.style.overflow = isOpen ? 'hidden' : '';
+    });
+    const dropdown = document.querySelector('.nav__dropdown');
+    const dropdownToggle = dropdown?.querySelector('.nav__dropdown-toggle');
+    dropdownToggle?.addEventListener('click', e => {
+      e.stopPropagation();
+      const isOpen = dropdown.classList.toggle('open');
+      dropdownToggle.setAttribute('aria-expanded', isOpen);
+    });
+    document.addEventListener('click', () => dropdown?.classList.remove('open'));
+  </script>
+</body>
+</html>

@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="sv">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Keramikkurser | Jenny Thunberg</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="icon" href="https://jennythunberg.se/wp-content/uploads/2024/01/cropped-favicon.png" />
+</head>
+<body>
+
+  <!-- NAV -->
+  <nav class="nav">
+    <div class="nav__inner">
+      <a class="nav__logo" href="index.html">
+        <img src="logotyp.png"
+             alt="Jenny Thunberg Keramik"
+             onerror="this.style.display='none'; this.nextElementSibling.style.display='block';" />
+        <span class="nav__logo-text" style="display:none;">Jenny Thunberg</span>
+      </a>
+      <ul class="nav__links" id="nav-links">
+        <li><a href="index.html">Hem</a></li>
+        <li><a href="handla-keramik.html">Handla keramik</a></li>
+        <li class="nav__dropdown">
+          <button class="nav__dropdown-toggle" aria-expanded="false">Utforska <span class="nav__dropdown-arrow">▾</span></button>
+          <ul class="nav__dropdown-menu">
+            <li><a href="lera-och-glasyrer.html">Lera & glasyrer</a></li>
+            <li><a href="inspiration.html">Inspiration</a></li>
+          </ul>
+        </li>
+        <li><a href="keramikkurser.html" class="active">Keramikkurser</a></li>
+        <li><a href="kontakt.html">Kontakt</a></li>
+      </ul>
+      <button class="nav__toggle" id="nav-toggle" aria-label="Meny">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </nav>
+
+  <!-- PAGE HERO -->
+  <div class="page-hero" style="position:relative; overflow:hidden;">
+    <img src="https://jennythunberg.se/wp-content/uploads/2024/01/IMG_7467.jpg"
+         alt="Keramikkurs"
+         style="position:absolute; inset:0; width:100%; height:100%; object-fit:cover; z-index:0; opacity:0.25;" />
+    <div style="position:relative;">
+      <h1>Keramikkurser</h1>
+      <p>Lär dig dreja, handbygga och ringla i Sommarro, Uppsala</p>
+    </div>
+  </div>
+
+  <!-- INTRO -->
+  <section class="section">
+    <div class="container" style="max-width:720px;">
+      <p style="color:var(--mid); font-size:1.05rem; font-weight:300; line-height:1.85; text-align:center;">
+        Jag håller keramikkurser i min verkstad i Sommarro, Uppsala.
+        Kurserna hålls i små grupper om max 6 deltagare för en personlig
+        och lärorik upplevelse. Välkommen oavsett om du är nybörjare
+        eller har lite erfarenhet av keramik.
+      </p>
+    </div>
+  </section>
+
+  <!-- COURSES -->
+  <section class="section section--alt">
+    <div class="container">
+      <div class="courses-grid">
+
+        <!-- Course 1 -->
+        <div class="course-card">
+          <span class="course-card__tag">5 tillfällen</span>
+          <h2>Keramikkurs — måndag kväll</h2>
+          <p style="color:var(--mid); font-weight:300; font-size:0.95rem; line-height:1.7; margin-bottom:8px;">
+            En kurs fördelad på fem måndagskvällar klockan 17–20. De fyra
+            första kvällarna skapar du dina föremål; den sista kvällen
+            glaserar vi tillsammans.
+          </p>
+
+          <div class="course-card__price">3 900 kr</div>
+          <p style="color:var(--mid); font-size:0.85rem; margin-top:-12px; margin-bottom:20px;">
+            Lera tillkommer — 100 kr/kg
+          </p>
+
+          <ul>
+            <li>Max 6 deltagare</li>
+            <li>Handbygge (handbygga)</li>
+            <li>Drejning — 4 drejar finns i verkstaden</li>
+            <li>Ringla (ringla)</li>
+            <li>Glasyrkvällen ingår</li>
+            <li>Kräver minst 4 anmälda</li>
+          </ul>
+
+          <div class="course-card__dates">
+            <strong>Lera:</strong> Vit eller antracitgrå stengodslera<br />
+            <strong>Tider:</strong> Måndag kl. 17:00–20:00<br />
+            <br />
+            <strong>Kommande datum:</strong><br />
+            2/2 &nbsp;·&nbsp; 9/2 &nbsp;·&nbsp; 23/2 &nbsp;·&nbsp; 2/3 &nbsp;·&nbsp; 9/3
+          </div>
+
+          <br />
+          <a href="kontakt.html" class="btn btn--rust" style="font-size:0.85rem; padding:10px 24px;">Anmälan →</a>
+        </div>
+
+        <!-- Course 2 -->
+        <div class="course-card">
+          <span class="course-card__tag">Prova på</span>
+          <h2>Prova på keramik</h2>
+          <p style="color:var(--mid); font-weight:300; font-size:0.95rem; line-height:1.7; margin-bottom:8px;">
+            En heldagsworkshop på 5 timmar där du provar på grundtekniker
+            i keramik. Jenny bränner och glaserar dina föremål; du hämtar
+            dem inom 3–4 veckor.
+          </p>
+
+          <div class="course-card__price">1 500 kr</div>
+          <p style="color:var(--mid); font-size:0.85rem; margin-top:-12px; margin-bottom:20px;">
+            Inkl. 1,5 kg lera · Extra lera 100 kr/kg
+          </p>
+
+          <ul>
+            <li>Max 6 deltagare</li>
+            <li>Tumma (pinching)</li>
+            <li>Kavla (slab rolling)</li>
+            <li>Dreja (wheel-throwing)</li>
+            <li>Jenny glaserar &amp; bränner åt dig</li>
+            <li>Hämtning inom 3–4 veckor</li>
+          </ul>
+
+          <div class="course-card__dates">
+            <strong>Lera:</strong> Vit eller antracitgrå stengodslera<br />
+            <br />
+            <strong>Kommande datum:</strong><br />
+            Lördag 24/1 <span class="fullt">Fullt</span><br />
+            Lördag 28/2 <span class="fullt">Fullt</span><br />
+            Lördag 7/3 <span class="fullt">Fullt</span><br />
+            Lördag 11/4 <span class="fullt">Fullt</span>
+          </div>
+
+          <br />
+          <a href="kontakt.html" class="btn btn--rust" style="font-size:0.85rem; padding:10px 24px;">Intresseanmälan →</a>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- CONTACT TEASER -->
+  <section class="section">
+    <div class="container" style="text-align:center;">
+      <h2 style="font-size:1.9rem; color:var(--rust); margin-bottom:12px;">Frågor om kurserna?</h2>
+      <div class="divider" style="margin:12px auto 24px;"></div>
+      <p style="color:var(--mid); max-width:500px; margin:0 auto 32px; font-weight:300;">
+        Kontakta mig gärna om du har frågor om innehåll, datum eller
+        om du vill boka en privat kurs för en grupp.
+      </p>
+      <a href="kontakt.html" class="btn btn--rust">Kontakta Jenny</a>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer__inner">
+        <div class="footer__brand">
+          <h3>Jenny Thunberg Keramik</h3>
+          <p>Handgjord stengods i Sommarro, Uppsala.</p>
+        </div>
+        <div class="footer__links">
+          <h4>Sidor</h4>
+          <ul>
+            <li><a href="index.html">Hem</a></li>
+            <li><a href="handla-keramik.html">Handla keramik</a></li>
+            <li><a href="lera-och-glasyrer.html">Lera & glasyrer</a></li>
+            <li><a href="inspiration.html">Inspiration</a></li>
+            <li><a href="keramikkurser.html">Keramikkurser</a></li>
+            <li><a href="kontakt.html">Kontakt</a></li>
+          </ul>
+        </div>
+        <div class="footer__links">
+          <h4>Kontakt</h4>
+          <ul>
+            <li><a href="tel:0733844480">073-384 44 80</a></li>
+            <li><a href="kontakt.html">Skicka meddelande</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer__bottom">
+        <p>© Jenny Thunberg Keramik · Uppsala</p>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    const toggle = document.getElementById('nav-toggle');
+    const links  = document.getElementById('nav-links');
+    toggle.addEventListener('click', () => {
+      const isOpen = links.classList.toggle('open');
+      toggle.classList.toggle('open', isOpen);
+      document.body.style.overflow = isOpen ? 'hidden' : '';
+    });
+    const dropdown = document.querySelector('.nav__dropdown');
+    const dropdownToggle = dropdown?.querySelector('.nav__dropdown-toggle');
+    dropdownToggle?.addEventListener('click', e => {
+      e.stopPropagation();
+      const isOpen = dropdown.classList.toggle('open');
+      dropdownToggle.setAttribute('aria-expanded', isOpen);
+    });
+    document.addEventListener('click', () => dropdown?.classList.remove('open'));
+  </script>
+</body>
+</html>

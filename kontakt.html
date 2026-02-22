@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="sv">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Kontakt | Jenny Thunberg</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="icon" href="https://jennythunberg.se/wp-content/uploads/2024/01/cropped-favicon.png" />
+</head>
+<body>
+
+  <!-- NAV -->
+  <nav class="nav">
+    <div class="nav__inner">
+      <a class="nav__logo" href="index.html">
+        <img src="logotyp.png"
+             alt="Jenny Thunberg Keramik"
+             onerror="this.style.display='none'; this.nextElementSibling.style.display='block';" />
+        <span class="nav__logo-text" style="display:none;">Jenny Thunberg</span>
+      </a>
+      <ul class="nav__links" id="nav-links">
+        <li><a href="index.html">Hem</a></li>
+        <li><a href="handla-keramik.html">Handla keramik</a></li>
+        <li class="nav__dropdown">
+          <button class="nav__dropdown-toggle" aria-expanded="false">Utforska <span class="nav__dropdown-arrow">▾</span></button>
+          <ul class="nav__dropdown-menu">
+            <li><a href="lera-och-glasyrer.html">Lera & glasyrer</a></li>
+            <li><a href="inspiration.html">Inspiration</a></li>
+          </ul>
+        </li>
+        <li><a href="keramikkurser.html">Keramikkurser</a></li>
+        <li><a href="kontakt.html" class="active">Kontakt</a></li>
+      </ul>
+      <button class="nav__toggle" id="nav-toggle" aria-label="Meny">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </nav>
+
+  <!-- PAGE HERO -->
+  <div class="page-hero">
+    <h1>Kontakt</h1>
+    <p>Välkommen att höra av dig — om keramik, kurser eller beställningar</p>
+  </div>
+
+  <!-- CONTACT CONTENT -->
+  <section class="section">
+    <div class="container">
+      <div class="contact-grid">
+
+        <!-- Info -->
+        <div class="contact-info">
+          <h2>Jenny Thunberg</h2>
+          <div class="divider"></div>
+          <p>
+            Keramiker och formgivare baserad i Sommarro, Uppsala.
+            Kontakta mig gärna om du har frågor om keramik, kurser
+            eller vill göra en beställning.
+          </p>
+          <p class="phone">
+            <a href="tel:0733844480">073-384 44 80</a>
+          </p>
+
+          <br />
+
+          <h3 style="font-family:var(--font-head); font-size:1.2rem; color:var(--dark); margin-bottom:12px;">Var du hittar keramiken</h3>
+          <p>
+            <strong>Öster om ån</strong><br />
+            Hantverkskooperativ, Uppsala
+          </p>
+          <br />
+          <p>
+            <strong>Hantverket</strong><br />
+            Hantverkskooperativ, Öregrund
+          </p>
+
+          <br />
+
+          <div style="margin-top:8px;">
+            <img src="https://jennythunberg.se/wp-content/uploads/2024/01/profil-jenny-thunberg2.jpg"
+                 alt="Jenny Thunberg"
+                 style="width:100%; max-width:340px; border-radius:2px; box-shadow:0 8px 32px rgba(0,0,0,0.1);"
+                 onerror="this.style.display='none';" />
+          </div>
+        </div>
+
+        <!-- Form -->
+        <div class="contact-form">
+          <h2>Skicka meddelande till mig</h2>
+          <div class="divider"></div>
+
+          <form action="mailto:jenny@jennythunberg.se" method="get">
+            <div class="form-group">
+              <label for="name">Ditt namn</label>
+              <input type="text" id="name" name="name" placeholder="Förnamn Efternamn" required />
+            </div>
+            <div class="form-group">
+              <label for="email">E-postadress</label>
+              <input type="email" id="email" name="email" placeholder="din@email.se" required />
+            </div>
+            <div class="form-group">
+              <label for="phone">Telefon (valfritt)</label>
+              <input type="tel" id="phone" name="phone" placeholder="070-000 00 00" />
+            </div>
+            <div class="form-group">
+              <label for="subject">Ämne</label>
+              <select id="subject" name="subject">
+                <option value="">Välj ämne...</option>
+                <option value="keramik">Köpa keramik / beställning</option>
+                <option value="kurs-mandag">Anmälan — Måndag kväll kurs</option>
+                <option value="kurs-prova">Anmälan — Prova på keramik</option>
+                <option value="ovrig">Övrigt</option>
+              </select>
+            </div>
+            <div class="form-group">
+              <label for="message">Meddelande</label>
+              <textarea id="message" name="body" placeholder="Skriv ditt meddelande här…" required></textarea>
+            </div>
+            <button type="submit" class="form-submit">Skicka meddelande</button>
+          </form>
+
+          <p style="margin-top:20px; font-size:0.85rem; color:var(--mid); font-weight:300;">
+            Du kan även ringa direkt på
+            <a href="tel:0733844480">073-384 44 80</a>.
+          </p>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer__inner">
+        <div class="footer__brand">
+          <h3>Jenny Thunberg Keramik</h3>
+          <p>Handgjord stengods i Sommarro, Uppsala.</p>
+        </div>
+        <div class="footer__links">
+          <h4>Sidor</h4>
+          <ul>
+            <li><a href="index.html">Hem</a></li>
+            <li><a href="handla-keramik.html">Handla keramik</a></li>
+            <li><a href="lera-och-glasyrer.html">Lera & glasyrer</a></li>
+            <li><a href="inspiration.html">Inspiration</a></li>
+            <li><a href="keramikkurser.html">Keramikkurser</a></li>
+            <li><a href="kontakt.html">Kontakt</a></li>
+          </ul>
+        </div>
+        <div class="footer__links">
+          <h4>Kontakt</h4>
+          <ul>
+            <li><a href="tel:0733844480">073-384 44 80</a></li>
+            <li>Sommarro, Uppsala</li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer__bottom">
+        <p>© Jenny Thunberg Keramik · Uppsala</p>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    const toggle = document.getElementById('nav-toggle');
+    const links  = document.getElementById('nav-links');
+    toggle.addEventListener('click', () => {
+      const isOpen = links.classList.toggle('open');
+      toggle.classList.toggle('open', isOpen);
+      document.body.style.overflow = isOpen ? 'hidden' : '';
+    });
+    const dropdown = document.querySelector('.nav__dropdown');
+    const dropdownToggle = dropdown?.querySelector('.nav__dropdown-toggle');
+    dropdownToggle?.addEventListener('click', e => {
+      e.stopPropagation();
+      const isOpen = dropdown.classList.toggle('open');
+      dropdownToggle.setAttribute('aria-expanded', isOpen);
+    });
+    document.addEventListener('click', () => dropdown?.classList.remove('open'));
+  </script>
+</body>
+</html>
