@@ -231,17 +231,22 @@
   </footer>
 
   <script>
-    // Page loader
+    // Page loader — shown once per session only
     const loader = document.getElementById('page-loader');
     if (loader) {
-      document.body.style.overflow = 'hidden';
-      setTimeout(() => {
-        loader.classList.add('fade-out');
-        loader.addEventListener('transitionend', () => {
-          loader.remove();
-          document.body.style.overflow = '';
-        }, { once: true });
-      }, 2050); // spin completes at 2s, tiny pause then fade
+      if (sessionStorage.getItem('loaderShown')) {
+        loader.remove();
+      } else {
+        sessionStorage.setItem('loaderShown', '1');
+        document.body.style.overflow = 'hidden';
+        setTimeout(() => {
+          loader.classList.add('fade-out');
+          loader.addEventListener('transitionend', () => {
+            loader.remove();
+            document.body.style.overflow = '';
+          }, { once: true });
+        }, 2050); // spin completes at 2s, tiny pause then fade
+      }
     }
 
     // Letter-by-letter hero title animation
