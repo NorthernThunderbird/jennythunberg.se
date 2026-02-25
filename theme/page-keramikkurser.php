@@ -1,0 +1,158 @@
+<?php
+add_action('wp_head', function () { ?>
+  <meta name="description" content="Boka keramikkurs i Uppsala hos Jenny Thunberg. Kurser i drejning, handbygge och ringla i liten grupp om max 6 deltagare i Sommarro. Från 1 500 kr." />
+  <meta name="keywords" content="keramikkurs Uppsala, drejningskurs Uppsala, keramik kurs, handbygge keramik, boka keramikkurs" />
+  <link rel="canonical" href="<?php echo esc_url(get_permalink()); ?>" />
+  <meta property="og:type" content="website" />
+  <meta property="og:title" content="Keramikkurser Uppsala | Jenny Thunberg" />
+  <meta property="og:description" content="Boka keramikkurs i Uppsala. Drejning, handbygge och ringla i liten grupp om max 6 deltagare. Från 1 500 kr." />
+  <meta property="og:url" content="<?php echo esc_url(get_permalink()); ?>" />
+  <meta property="og:image" content="https://jennythunberg.se/wp-content/uploads/2024/01/IMG_7467.jpg" />
+  <meta property="og:locale" content="sv_SE" />
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Course",
+    "name": "Keramikkurs — måndag kväll",
+    "description": "En kurs fördelad på fem måndagskvällar med drejning, handbygge och ringla. Max 6 deltagare.",
+    "provider": {
+      "@type": "Person",
+      "name": "Jenny Thunberg",
+      "url": "https://jennythunberg.se"
+    },
+    "offers": {
+      "@type": "Offer",
+      "price": "3900",
+      "priceCurrency": "SEK"
+    },
+    "location": {
+      "@type": "Place",
+      "name": "Jenny Thunbergs verkstad, Sommarro",
+      "address": {
+        "@type": "PostalAddress",
+        "addressLocality": "Uppsala",
+        "addressCountry": "SE"
+      }
+    }
+  }
+  </script>
+<?php }, 1);
+
+get_header();
+?>
+
+  <!-- PAGE HERO -->
+  <div class="page-hero">
+    <h1>Keramikkurser</h1>
+    <p>Lär dig dreja, handbygga och ringla i Sommarro, Uppsala</p>
+  </div>
+
+  <!-- INTRO -->
+  <section class="section">
+    <div class="container" style="max-width:720px;">
+      <p style="color:var(--mid); font-size:1.05rem; font-weight:300; line-height:1.85; text-align:center;">
+        Jag håller keramikkurser i min verkstad i Sommarro, Uppsala.
+        Kurserna hålls i små grupper om max 6 deltagare för en personlig
+        och lärorik upplevelse. Välkommen oavsett om du är nybörjare
+        eller har lite erfarenhet av keramik.
+      </p>
+    </div>
+  </section>
+
+  <!-- COURSES -->
+  <section class="section section--alt">
+    <div class="container">
+      <div class="courses-grid">
+
+        <!-- Course 1 -->
+        <div class="course-card">
+          <span class="course-card__tag">5 tillfällen</span>
+          <h2>Keramikkurs — måndag kväll</h2>
+          <p style="color:var(--mid); font-weight:300; font-size:0.95rem; line-height:1.7; margin-bottom:8px;">
+            En kurs fördelad på fem måndagskvällar klockan 17–20. De fyra
+            första kvällarna skapar du dina föremål; den sista kvällen
+            glaserar vi tillsammans.
+          </p>
+
+          <div class="course-card__price">3 900 kr</div>
+          <p style="color:var(--mid); font-size:0.85rem; margin-top:-12px; margin-bottom:20px;">
+            Lera tillkommer — 100 kr/kg
+          </p>
+
+          <ul>
+            <li>Max 6 deltagare</li>
+            <li>Handbygge (handbygga)</li>
+            <li>Drejning — 4 drejar finns i verkstaden</li>
+            <li>Ringla (ringla)</li>
+            <li>Glasyrkvällen ingår</li>
+            <li>Kräver minst 4 anmälda</li>
+          </ul>
+
+          <div class="course-card__dates">
+            <strong>Lera:</strong> Vit eller antracitgrå stengodslera<br />
+            <strong>Tider:</strong> Måndag kl. 17:00–20:00<br />
+            <br />
+            <strong>Kommande datum:</strong><br />
+            2/2 &nbsp;·&nbsp; 9/2 &nbsp;·&nbsp; 23/2 &nbsp;·&nbsp; 2/3 &nbsp;·&nbsp; 9/3
+          </div>
+
+          <br />
+          <a href="<?php echo home_url('/kontakt/'); ?>" class="btn btn--rust" style="font-size:0.85rem; padding:10px 24px;">Anmälan →</a>
+        </div>
+
+        <!-- Course 2 -->
+        <div class="course-card">
+          <span class="course-card__tag">Prova på</span>
+          <h2>Prova på keramik</h2>
+          <p style="color:var(--mid); font-weight:300; font-size:0.95rem; line-height:1.7; margin-bottom:8px;">
+            En heldagsworkshop på 5 timmar där du provar på grundtekniker
+            i keramik. Jenny bränner och glaserar dina föremål; du hämtar
+            dem inom 3–4 veckor.
+          </p>
+
+          <div class="course-card__price">1 500 kr</div>
+          <p style="color:var(--mid); font-size:0.85rem; margin-top:-12px; margin-bottom:20px;">
+            Inkl. 1,5 kg lera · Extra lera 100 kr/kg
+          </p>
+
+          <ul>
+            <li>Max 6 deltagare</li>
+            <li>Tumma (pinching)</li>
+            <li>Kavla (slab rolling)</li>
+            <li>Dreja (wheel-throwing)</li>
+            <li>Jenny glaserar &amp; bränner åt dig</li>
+            <li>Hämtning inom 3–4 veckor</li>
+          </ul>
+
+          <div class="course-card__dates">
+            <strong>Lera:</strong> Vit eller antracitgrå stengodslera<br />
+            <br />
+            <strong>Kommande datum:</strong><br />
+            Lördag 24/1 <span class="fullt">Fullt</span><br />
+            Lördag 28/2 <span class="fullt">Fullt</span><br />
+            Lördag 7/3 <span class="fullt">Fullt</span><br />
+            Lördag 11/4 <span class="fullt">Fullt</span>
+          </div>
+
+          <br />
+          <a href="<?php echo home_url('/kontakt/'); ?>" class="btn btn--rust" style="font-size:0.85rem; padding:10px 24px;">Intresseanmälan →</a>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- CONTACT TEASER -->
+  <section class="section">
+    <div class="container" style="text-align:center;">
+      <h2 style="font-size:1.9rem; color:var(--rust); margin-bottom:12px;">Frågor om kurserna?</h2>
+      <div class="divider" style="margin:12px auto 24px;"></div>
+      <p style="color:var(--mid); max-width:500px; margin:0 auto 32px; font-weight:300;">
+        Kontakta mig gärna om du har frågor om innehåll, datum eller
+        om du vill boka en privat kurs för en grupp.
+      </p>
+      <a href="<?php echo home_url('/kontakt/'); ?>" class="btn btn--rust">Kontakta Jenny</a>
+    </div>
+  </section>
+
+<?php get_footer(); ?>
