@@ -21,35 +21,25 @@ get_header();
 
   <!-- PROFILE SECTION -->
   <section class="section">
-    <div class="container">
-      <div class="content-block">
-        <div class="content-block__text">
-          <h2>Jenny Thunberg</h2>
-          <div class="divider"></div>
-          <p>
-            Jag är keramiker och formgivare baserad i Sommarro, Uppsala. Med kärlek till hantverk och en bakgrund i
-            konsthantverk skapar jag handgjord keramik i små serier — bruksgods med omsorg om varje detalj.
-          </p>
-          <p>
-            Jag arbetar med stengodslera som antingen gjuts i egengjorda gipsformar eller drejas för hand på drejskivan.
-            Leran bränns till 1260 grader för att bli vattentät och tålig nog för daglig användning.
-          </p>
-          <p>
-            Mitt formspråk präglas av enkelhet och rena linjer — med spår av handen i varje föremål. Inspiration hittar
-            jag i Västerbottens karga natur, barndomens sjö i Krokssjö och Upplandskustens klippor slipade av inlandsisen.
-          </p>
-          <p>
-            Utöver keramiken håller jag kurser i min verkstad i Sommarro för den som vill lära sig dreja, handbygga eller ringla.
-          </p>
-          <br />
-          <a href="<?php echo home_url('/keramikkurser/'); ?>" class="btn btn--rust">Boka kurs</a>
-        </div>
-        <div class="content-block__img">
-          <img src="https://jennythunberg.se/wp-content/uploads/2024/01/profil-jenny-thunberg2.jpg"
-               alt="Jenny Thunberg, keramiker i Uppsala"
-               onerror="this.style.display='none';" />
-        </div>
-      </div>
+    <div class="container" style="max-width:720px;">
+      <h2 style="font-size:1.9rem; color:var(--rust); margin-bottom:20px;">Jenny Thunberg</h2>
+      <div class="divider" style="margin-bottom:32px;"></div>
+      <p style="color:var(--mid); font-size:1rem; font-weight:300; line-height:1.85; margin-bottom:16px;">
+        Jag är keramiker och formgivare baserad i Sommarro, Uppsala. Med kärlek till hantverk och en bakgrund i
+        konsthantverk skapar jag handgjord keramik i små serier — bruksgods med omsorg om varje detalj.
+      </p>
+      <p style="color:var(--mid); font-size:1rem; font-weight:300; line-height:1.85; margin-bottom:16px;">
+        Jag arbetar med stengodslera som antingen gjuts i egengjorda gipsformar eller drejas för hand på drejskivan.
+        Leran bränns till 1260 grader för att bli vattentät och tålig nog för daglig användning.
+      </p>
+      <p style="color:var(--mid); font-size:1rem; font-weight:300; line-height:1.85; margin-bottom:16px;">
+        Mitt formspråk präglas av enkelhet och rena linjer — med spår av handen i varje föremål. Inspiration hittar
+        jag i Västerbottens karga natur, barndomens sjö i Krokssjö och Upplandskustens klippor slipade av inlandsisen.
+      </p>
+      <p style="color:var(--mid); font-size:1rem; font-weight:300; line-height:1.85; margin-bottom:32px;">
+        Utöver keramiken håller jag kurser i min verkstad i Sommarro för den som vill lära sig dreja, handbygga eller ringla.
+      </p>
+      <a href="<?php echo home_url('/keramikkurser/'); ?>" class="btn btn--rust">Boka kurs</a>
     </div>
   </section>
 

@@ -82,18 +82,14 @@ get_header();
           <ul>
             <li>Max 6 deltagare</li>
             <li>Handbygge (handbygga)</li>
-            <li>Drejning — 4 drejar finns i verkstaden</li>
+            <li>Drejning — 4 drejskivor finns i verkstaden</li>
             <li>Ringla (ringla)</li>
-            <li>Glasyrkvällen ingår</li>
             <li>Kräver minst 4 anmälda</li>
           </ul>
 
           <div class="course-card__dates">
             <strong>Lera:</strong> Vit eller antracitgrå stengodslera<br />
-            <strong>Tider:</strong> Måndag kl. 17:00–20:00<br />
-            <br />
-            <strong>Kommande datum:</strong><br />
-            2/2 &nbsp;·&nbsp; 9/2 &nbsp;·&nbsp; 23/2 &nbsp;·&nbsp; 2/3 &nbsp;·&nbsp; 9/3
+            <strong>Tider:</strong> Måndag kl. 17:00–20:00
           </div>
 
           <br />
@@ -125,13 +121,7 @@ get_header();
           </ul>
 
           <div class="course-card__dates">
-            <strong>Lera:</strong> Vit eller antracitgrå stengodslera<br />
-            <br />
-            <strong>Kommande datum:</strong><br />
-            Lördag 24/1 <span class="fullt">Fullt</span><br />
-            Lördag 28/2 <span class="fullt">Fullt</span><br />
-            Lördag 7/3 <span class="fullt">Fullt</span><br />
-            Lördag 11/4 <span class="fullt">Fullt</span>
+            <strong>Lera:</strong> Vit eller antracitgrå stengodslera
           </div>
 
           <br />
