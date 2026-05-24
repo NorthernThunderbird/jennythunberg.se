@@ -15,31 +15,27 @@ get_header();
 
   <!-- PAGE HERO -->
   <div class="page-hero">
-    <h1>Om mig</h1>
-    <p>Keramiker och formgivare från Uppsala</p>
+    <h1><?php echo jt_text('hero_title', 'Om mig'); ?></h1>
+    <p><?php echo jt_text('hero_subtitle', 'Keramiker och formgivare från Uppsala'); ?></p>
   </div>
 
   <!-- PROFILE SECTION -->
   <section class="section">
-    <div class="container" style="max-width:720px;">
-      <h2 style="font-size:1.9rem; color:var(--rust); margin-bottom:20px;">Jenny Thunberg</h2>
-      <div class="divider" style="margin-bottom:32px;"></div>
-      <p style="color:var(--mid); font-size:1rem; font-weight:300; line-height:1.85; margin-bottom:16px;">
-        Jag är keramiker och formgivare baserad i Sommarro, Uppsala. Med kärlek till hantverk och en bakgrund i
-        konsthantverk skapar jag handgjord keramik i små serier — bruksgods med omsorg om varje detalj.
-      </p>
-      <p style="color:var(--mid); font-size:1rem; font-weight:300; line-height:1.85; margin-bottom:16px;">
-        Jag arbetar med stengodslera som antingen gjuts i egengjorda gipsformar eller drejas för hand på drejskivan.
-        Leran bränns till 1260 grader för att bli vattentät och tålig nog för daglig användning.
-      </p>
-      <p style="color:var(--mid); font-size:1rem; font-weight:300; line-height:1.85; margin-bottom:16px;">
-        Mitt formspråk präglas av enkelhet och rena linjer — med spår av handen i varje föremål. Inspiration hittar
-        jag i Västerbottens karga natur, barndomens sjö i Krokssjö och Upplandskustens klippor slipade av inlandsisen.
-      </p>
-      <p style="color:var(--mid); font-size:1rem; font-weight:300; line-height:1.85; margin-bottom:32px;">
-        Utöver keramiken håller jag kurser i min verkstad i Sommarro för den som vill lära sig dreja, handbygga eller ringla.
-      </p>
-      <a href="<?php echo home_url('/keramikkurser/'); ?>" class="btn btn--rust">Boka kurs</a>
+    <div class="container">
+      <div class="content-block">
+        <div class="content-block__text">
+          <h2><?php echo jt_text('profile_title', 'Jenny Thunberg'); ?></h2>
+          <div class="divider"></div>
+          <?php echo jt_paragraphs('profile_text', "Jag är keramiker och formgivare baserad i Sommarro, Uppsala. Med kärlek till hantverk och en bakgrund i konsthantverk skapar jag handgjord keramik i små serier — bruksgods med omsorg om varje detalj.\n\nJag arbetar med stengodslera som antingen gjuts i egengjorda gipsformar eller drejas för hand på drejskivan. Leran bränns till 1260 grader för att bli vattentät och tålig nog för daglig användning.\n\nMitt formspråk präglas av enkelhet och rena linjer — med spår av handen i varje föremål. Inspiration hittar jag i Västerbottens karga natur, barndomens sjö i Krokssjö och Upplandskustens klippor slipade av inlandsisen.\n\nUtöver keramiken håller jag kurser i min verkstad i Sommarro för den som vill lära sig dreja, handbygga eller ringla."); ?>
+          <br />
+          <a href="<?php echo home_url('/keramikkurser/'); ?>" class="btn btn--rust"><?php echo jt_text('profile_btn', 'Boka kurs'); ?></a>
+        </div>
+        <div class="content-block__img">
+          <img src="https://jennythunberg.se/wp-content/uploads/2024/01/profil-jenny-thunberg2.jpg"
+               alt="Jenny Thunberg, keramiker i Uppsala"
+               onerror="this.style.display='none';" />
+        </div>
+      </div>
     </div>
   </section>
 
@@ -51,9 +47,9 @@ get_header();
           <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" style="vertical-align:middle; margin-right:8px;">
             <rect x="2" y="2" width="20" height="20" rx="5" ry="5"/><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"/>
           </svg>
-          <span>@jennyathunberg</span>
+          <span><?php echo jt_text('ig_handle', '@jennyathunberg'); ?></span>
         </a>
-        <h2 style="font-size:1.9rem; color:var(--rust); margin-top:12px; margin-bottom:8px;">Senaste från Instagram</h2>
+        <h2 style="font-size:1.9rem; color:var(--rust); margin-top:12px; margin-bottom:8px;"><?php echo jt_text('ig_title', 'Senaste från Instagram'); ?></h2>
         <div class="divider" style="margin:12px auto 0;"></div>
       </div>
 
@@ -65,7 +61,7 @@ get_header();
       <script type="module" src="https://cdn.behold.so/widget.js"></script>
 
       <div style="text-align:center; margin-top:40px;">
-        <a href="https://www.instagram.com/jennyathunberg/" target="_blank" rel="noopener" class="btn btn--rust">Följ på Instagram</a>
+        <a href="https://www.instagram.com/jennyathunberg/" target="_blank" rel="noopener" class="btn btn--rust"><?php echo jt_text('ig_btn', 'Följ på Instagram'); ?></a>
       </div>
     </div>
   </section>
