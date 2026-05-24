@@ -15,8 +15,8 @@ get_header();
 
   <!-- PAGE HERO -->
   <div class="page-hero">
-    <h1>Kontakt</h1>
-    <p>Välkommen att höra av dig — om keramik, kurser eller beställningar</p>
+    <h1><?php echo jt_text('hero_title', 'Kontakt'); ?></h1>
+    <p><?php echo jt_text('hero_subtitle', 'Välkommen att höra av dig — om keramik, kurser eller beställningar'); ?></p>
   </div>
 
   <!-- CONTACT CONTENT -->
@@ -26,35 +26,31 @@ get_header();
 
         <!-- Info -->
         <div class="contact-info">
-          <h2>Jenny Thunberg</h2>
+          <h2><?php echo jt_text('info_title', 'Jenny Thunberg'); ?></h2>
           <div class="divider"></div>
           <p>
-            Keramiker och formgivare baserad i Sommarro, Uppsala.
-            Kontakta mig gärna om du har frågor om keramik, kurser
-            eller vill göra en beställning.
+            <?php echo jt_text('info_text', 'Keramiker och formgivare baserad i Sommarro, Uppsala. Kontakta mig gärna om du har frågor om keramik, kurser eller vill göra en beställning.'); ?>
           </p>
           <p class="phone">
-            <a href="tel:0733844480">073-384 44 80</a>
+            <a href="tel:0733844480"><?php echo jt_text('phone_label', '073-384 44 80'); ?></a>
           </p>
 
           <br />
 
-          <h3 style="font-family:var(--font-head); font-size:1.2rem; color:var(--dark); margin-bottom:12px;">Var du hittar keramiken</h3>
+          <h3 style="font-family:var(--font-head); font-size:1.2rem; color:var(--dark); margin-bottom:12px;"><?php echo jt_text('locations_title', 'Var du hittar keramiken'); ?></h3>
           <p>
-            <strong>Öster om ån</strong><br />
-            Hantverkskooperativ, Uppsala
+            <?php echo jt_text('loc1', "<strong>Öster om ån</strong><br />\nHantverkskooperativ, Uppsala"); ?>
           </p>
           <br />
           <p>
-            <strong>Hantverket</strong><br />
-            Hantverkskooperativ, Öregrund
+            <?php echo jt_text('loc2', "<strong>Hantverket</strong><br />\nHantverkskooperativ, Öregrund"); ?>
           </p>
 
         </div>
 
         <!-- Form -->
         <div class="contact-form">
-          <h2>Skicka meddelande till mig</h2>
+          <h2><?php echo jt_text('form_title', 'Skicka meddelande till mig'); ?></h2>
           <div class="divider"></div>
 
           <form action="mailto:jenny@jennythunberg.se" method="get">
@@ -84,12 +80,11 @@ get_header();
               <label for="message">Meddelande</label>
               <textarea id="message" name="body" placeholder="Skriv ditt meddelande här…" required></textarea>
             </div>
-            <button type="submit" class="form-submit">Skicka meddelande</button>
+            <button type="submit" class="form-submit"><?php echo jt_text('form_btn', 'Skicka meddelande'); ?></button>
           </form>
 
           <p style="margin-top:20px; font-size:0.85rem; color:var(--mid); font-weight:300;">
-            Du kan även ringa direkt på
-            <a href="tel:0733844480">073-384 44 80</a>.
+            <?php echo jt_text('form_footer', 'Du kan även ringa direkt på <a href="tel:0733844480">073-384 44 80</a>.'); ?>
           </p>
         </div>
 

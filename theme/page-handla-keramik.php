@@ -15,8 +15,8 @@ get_header();
 
   <!-- PAGE HERO -->
   <div class="page-hero">
-    <h1>Handla keramik</h1>
-    <p>Handgjord stengods — bruksgods med omsorg om varje detalj</p>
+    <h1><?php echo jt_text('hero_title', 'Handla keramik'); ?></h1>
+    <p><?php echo jt_text('hero_subtitle', 'Handgjord stengods — bruksgods med omsorg om varje detalj'); ?></p>
   </div>
 
   <!-- CONTENT -->
@@ -24,23 +24,11 @@ get_header();
     <div class="container">
       <div class="content-block">
         <div class="content-block__text">
-          <h2>Var hittar du min keramik?</h2>
+          <h2><?php echo jt_text('main_title', 'Var hittar du min keramik?'); ?></h2>
           <div class="divider"></div>
-          <p>
-            I dagsläget säljer jag min keramik på hantverkskooperativen
-            <strong>Öster om ån</strong> i Uppsala och <strong>Hantverket</strong> i Öregrund.
-          </p>
-          <p>
-            Jag har ett litet lager av keramik i min verkstad och tar även
-            beställningar på förfrågan. Kontakta mig gärna om du letar efter
-            något specifikt eller vill göra en specialbeställning.
-          </p>
-          <p>
-            Min produktion består av bruksgods i små serier — koppar, fat,
-            skålar och kannor i vit och antracitgrå stengodslera.
-          </p>
+          <?php echo jt_paragraphs('main_text', "I dagsläget säljer jag min keramik på hantverkskooperativen <strong>Öster om ån</strong> i Uppsala och <strong>Hantverket</strong> i Öregrund.\n\nJag har ett litet lager av keramik i min verkstad och tar även beställningar på förfrågan. Kontakta mig gärna om du letar efter något specifikt eller vill göra en specialbeställning.\n\nMin produktion består av bruksgods i små serier — koppar, fat, skålar och kannor i vit och antracitgrå stengodslera."); ?>
           <br />
-          <a href="<?php echo home_url('/kontakt/'); ?>" class="btn btn--rust">Kontakta mig</a>
+          <a href="<?php echo home_url('/kontakt/'); ?>" class="btn btn--rust"><?php echo jt_text('main_btn', 'Kontakta mig'); ?></a>
         </div>
         <div class="content-block__img">
           <img src="https://jennythunberg.se/wp-content/uploads/2024/01/IMG_0907.jpg"
@@ -53,39 +41,35 @@ get_header();
   <!-- WHERE TO BUY CARDS -->
   <section class="section section--alt">
     <div class="container">
-      <h2 style="font-size:1.9rem; color:var(--rust); text-align:center; margin-bottom:8px;">Var du kan hitta keramiken</h2>
+      <h2 style="font-size:1.9rem; color:var(--rust); text-align:center; margin-bottom:8px;"><?php echo jt_text('locations_title', 'Var du kan hitta keramiken'); ?></h2>
       <div class="divider" style="margin: 12px auto 48px;"></div>
 
       <div style="display:grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap:32px;">
 
         <div class="course-card">
-          <span class="course-card__tag">Uppsala</span>
-          <h2>Öster om ån</h2>
+          <span class="course-card__tag"><?php echo jt_text('card1_tag', 'Uppsala'); ?></span>
+          <h2><?php echo jt_text('card1_title', 'Öster om ån'); ?></h2>
           <p style="color:var(--mid); font-weight:300; font-size:0.95rem; line-height:1.7;">
-            Hantverkskooperativ i centrala Uppsala med ett brett utbud av
-            handgjort hantverk från svenska konstnärer och hantverkare.
+            <?php echo jt_text('card1_desc', 'Hantverkskooperativ i centrala Uppsala med ett brett utbud av handgjort hantverk från svenska konstnärer och hantverkare.'); ?>
           </p>
         </div>
 
         <div class="course-card">
-          <span class="course-card__tag">Öregrund</span>
-          <h2>Hantverket</h2>
+          <span class="course-card__tag"><?php echo jt_text('card2_tag', 'Öregrund'); ?></span>
+          <h2><?php echo jt_text('card2_title', 'Hantverket'); ?></h2>
           <p style="color:var(--mid); font-weight:300; font-size:0.95rem; line-height:1.7;">
-            Hantverkskooperativ i Öregrund vid Upplandskusten. En charmig
-            butik med lokalt skapade hantverk och konsthantverk.
+            <?php echo jt_text('card2_desc', 'Hantverkskooperativ i Öregrund vid Upplandskusten. En charmig butik med lokalt skapade hantverk och konsthantverk.'); ?>
           </p>
         </div>
 
         <div class="course-card">
-          <span class="course-card__tag">Beställning</span>
-          <h2>Direkt från verkstaden</h2>
+          <span class="course-card__tag"><?php echo jt_text('card3_tag', 'Beställning'); ?></span>
+          <h2><?php echo jt_text('card3_title', 'Direkt från verkstaden'); ?></h2>
           <p style="color:var(--mid); font-weight:300; font-size:0.95rem; line-height:1.7;">
-            Kontakta mig direkt för att beställa specifika föremål eller
-            diskutera specialbeställningar. Jag har ett litet lager i
-            verkstaden i Sommarro, Uppsala.
+            <?php echo jt_text('card3_desc', 'Kontakta mig direkt för att beställa specifika föremål eller diskutera specialbeställningar. Jag har ett litet lager i verkstaden i Sommarro, Uppsala.'); ?>
           </p>
           <br />
-          <a href="<?php echo home_url('/kontakt/'); ?>" class="btn btn--rust" style="font-size:0.85rem; padding:10px 24px;">Kontakta mig →</a>
+          <a href="<?php echo home_url('/kontakt/'); ?>" class="btn btn--rust" style="font-size:0.85rem; padding:10px 24px;"><?php echo jt_text('card3_btn', 'Kontakta mig →'); ?></a>
         </div>
 
       </div>

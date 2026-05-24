@@ -73,11 +73,11 @@ get_header();
     </video>
     <div class="hero__overlay"></div>
     <div class="hero__content">
-      <h1 class="hero__title">Handgjord keramik från Uppsala</h1>
-      <p class="hero__subtitle">Upptäck handgjord keramik eller boka kurser i drejningsteknik och lär dig dreja</p>
+      <h1 class="hero__title"><?php echo jt_text('hero_title', 'Handgjord keramik från Uppsala'); ?></h1>
+      <p class="hero__subtitle"><?php echo jt_text('hero_subtitle', 'Upptäck handgjord keramik eller boka kurser i drejningsteknik och lär dig dreja'); ?></p>
       <div class="hero__buttons">
-        <a href="<?php echo home_url('/keramikkurser/'); ?>" class="btn btn--primary">Boka kurs</a>
-        <a href="<?php echo home_url('/handla-keramik/'); ?>" class="btn">Handla keramik</a>
+        <a href="<?php echo home_url('/keramikkurser/'); ?>" class="btn btn--primary"><?php echo jt_text('hero_btn_primary', 'Boka kurs'); ?></a>
+        <a href="<?php echo home_url('/handla-keramik/'); ?>" class="btn"><?php echo jt_text('hero_btn_secondary', 'Handla keramik'); ?></a>
       </div>
     </div>
   </section>
@@ -86,13 +86,11 @@ get_header();
   <div class="about-strip">
     <div class="about-strip__text">
       <div class="about-strip__text-inner">
-        <h2>Jenny Thunberg keramik i Sommarro Uppsala</h2>
+        <h2><?php echo jt_text('about_title', 'Jenny Thunberg keramik i Sommarro Uppsala'); ?></h2>
         <div class="divider"></div>
-        <p>Jag är keramiker och formgivare som arbetar med småskalig tillverkning av handgjord keramik.</p>
-        <p>Jag arbetar med stengodslera som antingen gjuts i egengjorda gipsformar eller drejas för hand. Jag vill att du ska uppleva att det varit en hand med hela vägen i processen. Ränderna i koppen som kan anas från drejningen, hänkeln som dragits av en hand för en hand. Små spår av handens arbete med omsorg i alla detaljer.</p>
-        <p>Min produktion består främst av bruksgods i små serier där form och funktion ligger mig varmt om hjärtat. I mitt formspråk strävar jag efter enkelhet och rena linjer.</p>
+        <?php echo jt_paragraphs('about_text', "Jag är keramiker och formgivare som arbetar med småskalig tillverkning av handgjord keramik.\n\nJag arbetar med stengodslera som antingen gjuts i egengjorda gipsformar eller drejas för hand. Jag vill att du ska uppleva att det varit en hand med hela vägen i processen. Ränderna i koppen som kan anas från drejningen, hänkeln som dragits av en hand för en hand. Små spår av handens arbete med omsorg i alla detaljer.\n\nMin produktion består främst av bruksgods i små serier där form och funktion ligger mig varmt om hjärtat. I mitt formspråk strävar jag efter enkelhet och rena linjer."); ?>
         <br />
-        <a href="<?php echo home_url('/handla-keramik/'); ?>" class="btn btn--rust">Se keramiken</a>
+        <a href="<?php echo home_url('/handla-keramik/'); ?>" class="btn btn--rust"><?php echo jt_text('about_btn', 'Se keramiken'); ?></a>
       </div>
     </div>
     <div class="about-strip__img">
@@ -104,8 +102,8 @@ get_header();
   <!-- GALLERY -->
   <section class="section section--alt">
     <div class="container">
-      <h2 style="font-size:2rem; color:var(--rust); text-align:center; margin-bottom:8px;">Keramik</h2>
-      <p style="text-align:center; color:var(--mid); margin-bottom:40px; font-weight:300;">Handgjord stengods i små serier</p>
+      <h2 style="font-size:2rem; color:var(--rust); text-align:center; margin-bottom:8px;"><?php echo jt_text('gallery_title', 'Keramik'); ?></h2>
+      <p style="text-align:center; color:var(--mid); margin-bottom:40px; font-weight:300;"><?php echo jt_text('gallery_subtitle', 'Handgjord stengods i små serier'); ?></p>
     </div>
     <div class="gallery">
       <div class="gallery__item">
@@ -128,7 +126,7 @@ get_header();
            style="background-image: url('https://jennythunberg.se/wp-content/uploads/2024/01/test-scaled.jpg');">
     <div class="quote-banner__inner">
       <blockquote>
-        "Enkelhet och rena linjer — form och funktion i harmoni"
+        <?php echo jt_text('quote', '"Enkelhet och rena linjer — form och funktion i harmoni"'); ?>
       </blockquote>
     </div>
   </section>
@@ -136,12 +134,12 @@ get_header();
   <!-- KURSER TEASER -->
   <section class="section">
     <div class="container" style="text-align:center;">
-      <h2 style="font-size:2rem; color:var(--rust); margin-bottom:12px;">Keramikkurser</h2>
+      <h2 style="font-size:2rem; color:var(--rust); margin-bottom:12px;"><?php echo jt_text('kurser_title', 'Keramikkurser'); ?></h2>
       <div class="divider" style="margin: 12px auto 28px;"></div>
       <p style="color:var(--mid); max-width:600px; margin:0 auto 36px; font-weight:300;">
-        Lär dig grunderna i keramik — drejning, handbygge och ringla — i en liten grupp om max 6 personer i min verkstad i Sommarro.
+        <?php echo jt_text('kurser_text', 'Lär dig grunderna i keramik — drejning, handbygge och ringla — i en liten grupp om max 6 personer i min verkstad i Sommarro.'); ?>
       </p>
-      <a href="<?php echo home_url('/keramikkurser/'); ?>" class="btn btn--rust">Se kurser &amp; anmälan</a>
+      <a href="<?php echo home_url('/keramikkurser/'); ?>" class="btn btn--rust"><?php echo jt_text('kurser_btn', 'Se kurser & anmälan'); ?></a>
     </div>
   </section>
 
