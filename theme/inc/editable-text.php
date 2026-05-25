@@ -105,6 +105,7 @@ function jt_fields_for_page($slug) {
                 $f('intro',         'Intro-text',
                     'Jag håller keramikkurser i min verkstad i Sommarro, Uppsala. Kurserna hålls i små grupper om max 6 deltagare för en personlig och lärorik upplevelse. Välkommen oavsett om du är nybörjare eller har lite erfarenhet av keramik.',
                     'textarea'),
+                $f('notice',        'Aktuell information (visas ovanför kurskorten — lämna tomt för att dölja)', '', 'textarea'),
 
                 $f('c1_tag',        'Kurs 1 — tagg',                          '5 tillfällen'),
                 $f('c1_title',      'Kurs 1 — rubrik',                        'Keramikkurs — måndag kväll'),

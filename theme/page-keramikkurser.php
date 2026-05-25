@@ -56,6 +56,16 @@ get_header();
     </div>
   </section>
 
+  <?php $jt_notice = jt_get_meta('notice', ''); if ($jt_notice !== ''): ?>
+  <!-- NOTICE -->
+  <div class="container jt-notice-wrap" style="max-width:720px; margin-bottom:48px;">
+    <div class="jt-notice" style="background:#ebebeb; border-left:3px solid #2e2e2e; padding:20px 28px; color:#1a1a1a; font-size:1rem; font-weight:300; line-height:1.7; text-align:center;">
+      <?php echo wpautop(wp_kses_post($jt_notice)); ?>
+    </div>
+  </div>
+  <style>.jt-notice p:first-child{margin-top:0;}.jt-notice p:last-child{margin-bottom:0;}</style>
+  <?php endif; ?>
+
   <!-- COURSES -->
   <section class="section section--alt">
     <div class="container">
